@@ -34,7 +34,6 @@ public class ScriptPlayerController : MonoBehaviour
     void Update()
     {
         var _playerDir = Vector3.zero;
-        //Vector3 vector = new Vector3();
 
         if (Application.isEditor)
         {
@@ -48,7 +47,8 @@ public class ScriptPlayerController : MonoBehaviour
         {
             // スマホの傾きで確度を取得する
             _playerDir.x = Input.acceleration.x;
-            _playerDir.z = -Input.acceleration.z;
+            _playerDir.y = 0;
+            _playerDir.z = Input.acceleration.y;
 
             // playerDirが0.1でも動いたら実行
             if (_playerDir.magnitude > 0.1)
@@ -65,7 +65,7 @@ public class ScriptPlayerController : MonoBehaviour
 
         if (debugLabel != null)
         {
-            string msg = $"X:{_playerDir.x}\nY:{_playerDir.y}\nZ:{_playerDir.z}";
+            string msg = $"X:{Input.acceleration.x}\nY:{Input.acceleration.y}\nZ:{Input.acceleration.z}\nX:{_playerDir.x}\nY:{_playerDir.y}\nZ:{_playerDir.z}";
             debugLabel.GetComponent<TextMeshProUGUI>().text = msg;
         }
     }
