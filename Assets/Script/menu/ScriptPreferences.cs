@@ -4,6 +4,10 @@ using UnityEngine;
 
 static public class Preferences
 {
+    #region readonly
+    static public readonly int StageIdMax = 3;
+    #endregion
+
     static public float getBestTime(int _stageId)
     {
         return PlayerPrefs.GetFloat("bestTimeStage" + _stageId.ToString(), (float)999.99);
@@ -16,7 +20,7 @@ static public class Preferences
 
     static public int getClearFlg(int _stageId)
     {
-        return PlayerPrefs.GetInt("ClearFlgStage" + _stageId.ToString(), (int)1);
+        return PlayerPrefs.GetInt("ClearFlgStage" + _stageId.ToString(), (int)0);
     }
     static public void setClearFlg(int _stageId, int _clearFlg)
     {
@@ -25,17 +29,17 @@ static public class Preferences
     }
 }
 
-// public class ScriptPreferences : MonoBehaviour
-// {
-//     // Start is called before the first frame update
-//     void Start()
-//     {
+public class ScriptPreferences : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
         
-//     }
+    }
 
-//     // Update is called once per frame
-//     void Update()
-//     {
+    // Update is called once per frame
+    void Update()
+    {
         
-//     }
-// }
+    }
+}
