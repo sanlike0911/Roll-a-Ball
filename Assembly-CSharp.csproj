@@ -151,7 +151,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\Script\menu\ScriptPanelControl.cs" />
     <Compile Include="Assets\Script\menu\ScriptDebug.cs" />
-    <Compile Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\AotStubs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Bolt\Ludiq\Ludiq.Core\DotNetDocumentation\System.Web.Extensions.Design.xml" />
@@ -160,7 +159,6 @@
     <None Include="Assets\Bolt\Ludiq\Bolt\Documentation\0. READ ME FIRST.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\Bolt\Ludiq\Ludiq.Core\DotNetDocumentation\System.Data.xml" />
-    <None Include="Assets\Unity.VisualScripting.Generated\VisualScripting.Core\link.xml" />
     <None Include="Assets\Bolt\Ludiq\Assemblies\Bolt.Flow.Runtime.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Bolt\Ludiq\Ludiq.Core\DotNetDocumentation\mscorlib.xml" />
